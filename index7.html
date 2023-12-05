@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <ul>
+    <li><a href="index8.html">Next</a></li>
+    <li><a href="index6.html">Back</a></li>
+    <li style="float:left"><p>Burnout</p></li>
+  </ul>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="Phone.png" style="width: 100%">
+      <div class="text">
+        <div class = "button">
+        <a href="index8.html" button aria-label= "Go meet friend"> Go meet friend </a></div>
+        <div class="audio"><audio controls autoplay><source src="344606__vcspran__typing_sending_text_message.wav"></audio></div>
+      </div>
+    </div>
+
+    <!-- Additional slides go here -->
+
+    <!-- Next and previous buttons -->
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+
+  </div>
+
+  <!-- The dots/circles -->
+  <!-- <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div> -->
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      if (slideIndex < slides.length) {
+        slides[slideIndex].style.display = "block";
+        let audio = slides[slideIndex].getElementsByClassName("audio")[0].getElementsByTagName("audio")[0];
+        audio.play();
+        slideIndex++;
+      }
+
+      // Change image every 8 seconds
+     /* setTimeout(showSlides, 8000); */
+    }
+  </script>
+
+</body>
+
+</html>

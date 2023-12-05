@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src = "main.js" defer></script> <!-- ensures that the html first than js-->
+</head>
+<body>
+  <ul>
+  <li><a href="index5.html">Next</a></li>
+  <li><a href="index3.html">Back</a></li>
+  <li style="float:left"><p>Burnout</li>
+</ul>
+
+<div class="slideshow-container">
+<div class="book">
+  <input type="checkbox" id="c1">
+  <input type="checkbox" id="c2">
+  <input type="checkbox" id="c3">
+  <div id="cover"><img src="Tropuhy.png"></div>
+  <div class="flip-book">
+  <div class="flip" id="p1">
+  <div class="back">
+  <img src="endless_day.png">
+  <label class="back-btn" for="c1">Back</label>
+  </div>
+  <div class="front">
+  <p>The painter was once successful, standing proudly before a cheering crowd, trophy in hand.</p>
+  <label class="next-btn" for="c1">Next</label>
+    </div>
+  </div>
+  <div class="flip" id="p2">
+  <div class="back">
+  <img src="bad_comments.png">
+  <label class="back-btn" for="c2">Back</label>
+  </div>
+  <div class="front">
+ 
+  <p>Yet, beneath the surface of that euphoria, a torrent of criticism and stress had eroded their confidence after countless days.</p>
+  <label class="next-btn" for="c2">Next</label>
+    </div>
+  </div>
+  
+  <div class="flip" id="p3">
+  <div class="back">
+  <label class="back-btn" for="c3">Back</label>
+  </div>
+  <div class="front">
+  <p>External and internal comments start to attack one’s self-esteem and motivation. Even with their ears covered, they can no longer stay ignorant.</p>
+  <label class="next-btn" for="c3">Next</label>
+    </div>
+  </div>
+  <div class="button">
+    <a href="index5.html" button aria-label="Painting"> Closing Journal </a></div>
+  </div>
+  </div>
+</div>
+
+<script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+ /* setTimeout(showSlides, 8000); // Change image every 8 seconds */
+}
+
+</script>
+
+</body>
+</html>

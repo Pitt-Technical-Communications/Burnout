@@ -1,0 +1,504 @@
+body 
+{
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.textbox
+{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 100px 100px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+}
+.audio 
+{
+  padding: 120px 450px;
+}
+
+/* Change your button colors and other attributes here. */
+.buttonbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border: 2px solid #ffffff;
+}
+
+.button {
+  background-color: #c9c9c9;
+  border: 2px solid #464646;
+  color: rgb(255, 255, 255);
+  padding: 20px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #464646;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li 
+{
+  float: right;
+}
+
+li p {
+  color: white;
+  text-align: center;
+  padding: 0px 16px;
+  text-decoration: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+li  a:hover {
+    color: grey;
+  }
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 85%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.flex-container {
+  display: flex;
+  background-color: black;
+}
+
+.flex-container > div {
+  background-color: #000;
+  color: white;
+  width: 50%;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/*Button */
+button:hover {
+    color: grey;
+
+
+/*Navigation */
+
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: black;
+  position: fixed;
+  height: 90vh;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.maincontent {
+  margin-left: 300px;
+  padding: 1px 16px;
+  /*height: ;
+  width: ; */
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.maincontent {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) 
+{
+  .sidebar a 
+  {
+    text-align: center;
+    float: none;
+  }
+}
+
+.imageSlider
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 700px;
+    padding-left: 400%;
+    height: 100vh;
+    background: black;
+}
+.container 
+{
+    max-width: 1200px;
+    width: 95%;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+  }
+  
+  .slider-wrapper .slide-button
+   {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 60px;
+    width: 60px;
+    z-index: 5;
+    color: #fff;
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: #000000;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .slider-wrapper .slide-button:hover {
+    background: #404040;
+  }
+
+  .slider-wrapper .slide-button#prev-slide {
+    left: -25px;
+  }
+  
+  .slider-wrapper .slide-button#next-slide {
+    right: -25px;
+  }
+  .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  
+ /*.slider-wrapper .image-list::-webkit-scrollbar {
+   
+  } */
+  
+  .slider-wrapper .image-list .image-item {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+  }
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+  }
+  /*book */
+  input {
+    display: none;
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .book{
+    margin-top: -20px;
+    padding: 0;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  #cover{
+    width: 280px;
+    height: 400px;
+  }
+  .flip-book{
+    width: 280px;
+    height: 400px;
+    position: relative;
+    perspective: 1500px;
+  }
+  .flip{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    transition: .5s;
+    color: #000;
+  }
+  p
+  {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 0 13px;
+    box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
+  }
+  .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background: #000;
+  }
+  .next-btn{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color: #000;
+    
+  }
+  .back-btn{
+    position: absolute;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color: #fff;
+    
+  }
+  #p1{
+    z-index: 3;
+  }
+  #p2{
+    z-index: 2;
+  }
+  #p3{
+    z-index: 1;
+  }
+  #c1:checked ~ .flip-book #p1{
+     transform: rotateY(-180deg);
+    z-index: 1;
+  }
+  #c2:checked ~ .flip-book #p2{
+    transform: rotateY(-180deg);
+    z-index: 2;
+  }
+  #c3:checked ~ .flip-book #p3{
+    transform: rotateY(-180deg);
+    z-index: 3;
+  }
+  
+
+/* Caption text */
+#textbox{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+
+}
+/*
+.container2 
+{
+  position: relative;
+  width: 0;
+  height: 0;
+  background: rgb(206, 206, 206);
+  border-radius: 25px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.container2.active 
+{
+  width: 200px;
+  height: 400px;
+}
+.container2::before
+{
+  content: '';
+  position: absolute;
+  bottom: -15;
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 5px;
+  transform: rotate(45deg);
+}
+.toggleBtn
+{
+  position: absolute;
+  bottom: -20px;
+  min-width: 60px;
+  height: 60px;
+  background: #0bcf9c;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.toggleBtn::before
+{
+  content: '+';
+  font-size: 2.5em;
+  color: white;
+}
+.container2.active .toggleBtn
+{
+  bottom: -90px;
+  transform: rotate(135deg);
+  background: red;
+}

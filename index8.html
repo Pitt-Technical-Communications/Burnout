@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Image Slider in HTML CSS and JavaScript | CodingNepal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <ul>
+  <li><a href="index9.html">Next</a></li>
+  <li><a href="index7.html">Back</a></li>
+  <li style="float:left"><p>Burnout</li>
+</ul>
+
+<div class = ".imageSlider" style="margin-left: 50px; margin-top: 40px;">
+<!-- Google Fonts Link For Icons -->
+<div class="container">
+  <div class="slider-wrapper">
+    <ul class="image-list">
+      <img class="image-item" img src="friend.png" alt="img-1" />
+      <img class="image-item" img src="thinking.png" alt="img-2" />
+      <img class="image-item" img src="therapist.png" alt="img-3" />
+      <img class="image-item" img src="Hiking.png" alt="img-4" />
+      <img class="image-item" img src="balance.png" alt="img-5" />
+      <img class="image-item" img src="Butterfly.png" alt="img-6" />
+     <div class = "button" style= "margin-bottom: 100px; margin-top: 100px;"> <a href="index9.html" button aria-label= "A few weeks later..."> A few weeks later... </a></div> />
+    </ul>
+    <button id="prev-slide" class="slide-button material-symbols-rounded"> chevron_left </button>
+    <button id="next-slide" class="slide-button material-symbols-rounded"> chevron_right </button>
+  </div>
+  <div class="slider-scrollbar">
+    <div class="scrollbar-track">
+      <div class="scrollbar-thumb"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+ /* setTimeout(showSlides, 8000); // Change image every 8 seconds */
+}
+
+</script>
+
+</body>
+</html>
