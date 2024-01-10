@@ -260,7 +260,8 @@ div.maincontent {
     float: none;
   }
 }
-
+/* slider ->
+YouTube. (2023, September 2). Create responsive image slider in HTML CSS and JavaScript | Image Slider HTML CSS & JavaScript. YouTube. https://www.youtube.com/watch?v=PsNaoDhzQm0&list=PLpwngcHZlPae68z_mLFNfbJFIJVJ_Zcx2 */
 .imageSlider
 {
     display: flex;
@@ -335,7 +336,9 @@ div.maincontent {
   .slider-scrollbar:hover .scrollbar-track {
     height: 4px;
   }
-  /*book */
+  /*book
+  YouTube. (2020, December 27). CSS flip book on click using HTML and CSS only | creative flip book effect. YouTube. https://www.youtube.com/watch?v=A5fdu8HZKic
+  */
   input {
     display: none;
   }
