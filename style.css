@@ -12,9 +12,9 @@ body
   bottom: 8px;
   width: 100%;
 }
-.audio 
+audio 
 {
-  padding: 120px 450px;
+  float: right;
 }
 
 /* Change your button colors and other attributes here. */
